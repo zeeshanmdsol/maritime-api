@@ -29,7 +29,7 @@ class UserProfileManager(BaseUserManager):
         user.save(using=self._db)
 
         return user
-        
+
 
 class UserProfile(AbstractBaseUser, PermissionsMixin):
     """Database model for users in the system"""
